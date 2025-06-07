@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政府资金流向分析 | 山火科普</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                 <i class="fas fa-fire"></i>
+                <h1>山火科普</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="首页.html">首页</a></li>
+                    <li><a href="山火科普.html">案例分析</a></li>
+                    <li><a href="资金问题.html" class="active">资金流向分析</a></li>
+                    <li><a href="预防措施.html">预防措施</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>政府山火防控资金流向分析</h1>
+           
+    </section>
+
+    <section class="fund-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>概述</h2>
+
+            </div>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>2020年加州山火危机后，联邦和州政府共投入了约150亿美元用于山火应对、救援和重建工作。这些资金的分配和使用效率直接关系到灾后恢复和未来预防工作的成效。</p>
+                    <p>本分析基于公开数据，旨在展示政府资金的流向，并对资金使用效率和合理性进行客观评估，为改进未来山火防控资金分配提供参考,同时监督公共资源分配以及优化防灾体系。</p>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-item highlight">
+                        <h3>$150亿</h3>
+                        <p>总投入资金</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>$90亿</h3>
+                        <p>联邦资金</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>$60亿</h3>
+                        <p>州政府资金</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fund-allocation">
+        <div class="container">
+            <div class="section-header">
+                <h2>资金分配明细</h2>
+            
+            </div>
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="fundAllocationChart"></canvas>
+                </div>
+                <div class="data-analysis">
+                    <h3>主要资金去向</h3>
+                    <ul class="analysis-list">
+                        <li><span class="category emergency">应急响应</span> - $42亿用于直接灭火行动、紧急疏散和临时避难所</li>
+                        <li><span class="category rebuild">灾后重建</span> - $55亿用于基础设施修复和社区重建</li>
+                        <li><span class="category compensation">受灾赔偿</span> - $28亿用于个人财产损失补偿和商业援助</li>
+                        <li><span class="category prevention">预防措施</span> - $20亿用于森林管理和防火设施建设</li>
+                        <li><span class="category research">研究与技术</span> - $5亿用于山火预测和监测技术研发</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fund-effectiveness">
+        <div class="container">
+            <div class="section-header">
+                <h2>资金使用效果评估</h2>
+                
+            </div>
+            <div class="effectiveness-grid">
+                <div class="effectiveness-card positive">
+                    <div class="card-header">
+						<div class="container2">
+        <!-- 第一列 -->
+        <div class="column">
+            <h2>使用优势</h2>
+            <p> <li>紧急疏散行动高效执行，挽救了数千人生命</li>
+                      <li>临时避难所快速建立，基本满足了受灾民众需求</li>
+                         <li>基础设施修复工作进展顺利，大部分地区已恢复正常</li>
+                         <li>投资安装的监测设备提高了火情早期发现率35%</li></p>
+        </div>
+        
+        <!-- 第二列 -->
+        <div class="column">
+            <h2>存在问题</h2>
+            <p><li>部分重建资金拨款过程繁琐，导致部分社区等待时间过长</li>
+                       <li>个人赔偿金额普遍低于实际损失，补偿不足</li>
+                         <li>预防措施资金比例偏低</li>
+                         <li>森林管理项目进展缓慢，预算执行率不足</li>
+        </div>
+        
+        <!-- 第三列 -->
+       
+    </div>
+                    
+                       
+                </div>
+                <div class="effectiveness-card negative">
+                    <div class="card-header">
+                    
+                       
+            </div>
+  
+
+    <section class="fund-comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>历年山火防控资金比较</h2>
+             
+            </div>
+            <div class="comparison-chart">
+                <canvas id="fundComparisonChart"></canvas>
+            </div>
+            <div class="comparison-analysis">
+                <div class="analysis-point">
+                    <h3>资金增长趋势</h3>
+                    <p>过去10年，加州山火防控资金整体呈上升趋势，特别是在经历重大山火后，资金投入会显著增加。2020年的资金投入是2010年的近5倍。</p>
+                </div>
+                <div class="analysis-point">
+                    <h3>资金结构变化</h3>
+                    <p>近年来，应急响应资金比例持续增加，而长期预防和森林管理资金比例相对下降。这种"重救灾轻预防"的倾向值得反思。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="funding-issues">
+        <div class="container">
+            <div class="section-header">
+                <h2>资金使用问题分析</h2>
+              
+            </div>
+            <div class="issues-content">
+                <div class="issue-card">
+                    <div class="issue-icon">
+                    
+                    </div>
+		<div class="container2">
+        <!-- 第一列 -->
+        <div class="column">
+            <h2>资金分配失衡</h2>
+            <p> <li>过多资金用于灾后应对，而非预防措施。有效的预防投入可大幅减少未来损失和应急支出。</li>
+                        <li><strong>建议:</strong> 将至少30%的山火资金分配给预防性措施</li>
+                        </p>
+        </div>
+        
+        <!-- 第二列 -->
+        <div class="column">
+            <h2>拨款流程延迟</h2>
+            <p><li>官僚程序导致资金从批准到实际使用平均延迟4-6个月，影响恢复效率。</li>
+                        <li><strong>建议：</strong> 简化紧急资金拨款流程，建立快速通道</li>
+                        </p>
+        </div>
+        
+        <!-- 第三列 -->
+        <div class="column">
+            <h2>监督机制不足</h2>
+            <p><li>资金使用缺乏有效监督，部分项目存在超支或资金使用效率低下问题。</li>
+                        <li> <strong>建议：</strong> 加强独立审计和公众监督，提高透明度</li>
+				</p>
+                       
+       
+		
+        </div>		
+    </div>
+
+        </div>
+    </section>
+
+
+       
+
+    <section class="conclusion">
+        <div class="container">
+            <div class="section-header">
+                <h2>结论与建议</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="conclusion-content">
+                <p>通过对2020年加州山火危机政府资金使用情况的分析，我们发现当前的资金分配和使用模式存在明显不足，特别是在预防投入、资金分配公平性和使用效率方面。要提高山火防控资金的效益，我们建议：</p>
+                <ol class="recommendations-list">
+                    <li>调整资金结构，将更多资金投入预防性措施，如森林管理、社区防火设施和教育。</li>
+                    <li>简化紧急资金拨款流程，减少官僚延误。</li>
+                    <li>加强资金使用监督，提高透明度和问责制。</li>
+                    <li>保障弱势群体获得公平的资源分配。</li>
+                    <li>建立科学的资金使用效果评估机制，指导未来资金分配。</li>
+                </ol>
+                <p>合理分配和高效使用山火防控资金不仅能够降低山火造成的损失，还能从长远上减少总体防控成本，保护环境和社区安全。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>了解如何预防山火</h2>
+            <p>了解更多山火预防知识，保护自己和家人的安全。</p>
+            <a href="预防措施.html" class="btn">查看预防措施</a>
+            <a href="山火科普.html" class="btn btn-outline">返回案例分析</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-fire"></i>
+                    <h2>山火科普</h2>
+                </div>
+               
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-envelope"></i>www.666.com</p>
+                    <p><i class="fas fa-phone"></i> 4008-123-123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 山火科普网站 | 所有信息仅供教育目的</p>
+                <div class="data-sources">
+                    <p>数据来源：加州紧急服务办公室、联邦紧急事务管理署、美国林务局财务报告</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="file:///C|/Users/宋扬/Desktop/src/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 资金分配饼图
+            const allocationCtx = document.getElementById('fundAllocationChart').getContext('2d');
+            const allocationChart = new Chart(allocationCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['应急响应', '灾后重建', '受灾赔偿', '预防措施', '研究与技术'],
+                    datasets: [{
+                        data: [42, 55, 28, 20, 5],
+                        backgroundColor: [
+                            'rgba(255, 99, 71, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 206, 86, 0.8)',
+                            'rgba(75, 192, 192, 0.8)',
+                            'rgba(153, 102, 255, 0.8)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2025年加州山火资金分配（单位：亿美元）',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.parsed || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: $${value}亿 (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // 年度资金比较图
+            const comparisonCtx = document.getElementById('fundComparisonChart').getContext('2d');
+            const comparisonChart = new Chart(comparisonCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['2010', '2012', '2014', '2016', '2018', '2020'],
+                    datasets: [
+                        {
+                            label: '应急响应',
+                            data: [5, 8, 12, 18, 25, 42],
+                            backgroundColor: 'rgba(255, 99, 71, 0.8)'
+                        },
+                        {
+                            label: '灾后重建',
+                            data: [6, 10, 15, 20, 30, 55],
+                            backgroundColor: 'rgba(54, 162, 235, 0.8)'
+                        },
+                        {
+                            label: '预防措施',
+                            data: [4, 5, 6, 8, 12, 20],
+                            backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                        },
+                        {
+                            label: '其他',
+                            data: [3, 4, 5, 7, 10, 33],
+                            backgroundColor: 'rgba(153, 102, 255, 0.8)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: '年份'
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: '资金金额（亿美元）'
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2010-2020年加州山火防控资金变化趋势',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+
+            // 标签切换
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // 移除所有活动状态
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanes.forEach(pane => pane.classList.remove('active'));
+
+                    // 添加活动状态到当前选中项
+                    button.classList.add('active');
+                    const targetTab = button.getAttribute('data-tab');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

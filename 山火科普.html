@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例分析 - 加州山火 | 山火科普</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                    <i class="fas fa-fire"></i>
+                <h1>山火科普</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="首页.html">首页</a></li>
+                    <li><a href="山火科普.html" class="active">案例分析</a></li>
+                    <li><a href="资金问题.html">资金流向分析</a></li>
+                    <li><a href="预防措施.html">预防措施</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>案例分析：2020年加州山火危机</h1>
+            <div class="breadcrumb">
+                <a href="file:///C|/Users/宋扬/Desktop/index.html">首页</a> / <span>案例分析</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>事件概述</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p><p style="font-size: 22px;">2020年8月16日，美国加利福尼亚南部地区经历了一场强劲干燥风暴，引起了多起山火，此次山火灾害已成为美国历史上最严重的自然灾害。</p></p>
+                    <p><p style="font-size: 22px;">此次山火危机的规模之大，不仅在加州历史上前所未有，在美国乃至全球山火记录中也极为罕见。山火造成的浓烟甚至影响到了数千公里外的地区，导致广泛的空气质量问题。</p>
+                </div>
+                <div class="image-box">
+                    <img src="微信图片_20250531192219.jpg" alt="2020年加州山火现场图片">
+                    <p class="caption">2020年9月 加州火灾前后对比图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fire-causes">
+        <div class="container">
+            <div class="section-header">
+                <h2>受灾原因</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="causes-container">
+                <div class="cause-card">
+                  
+                    <h3>气候因素</h3>
+                    <p>加州属于地中海气候，8月降水量减少了80%以上，导致先前迅猛生长的草木干枯，成为易燃物。</p>
+                </div>
+                <div class="cause-card">
+                   
+                    <h3>季风影响</h3>
+                    <p>强劲的季风“圣安娜风”在南加州造成了“危急”的火灾天气条件，干燥的阵风沿内陆山脉一侧流下，穿过狭长的山地峡谷，向海岸吹去，而内华达山脉阻挡暖湿气流，形成“焚风”。</p>
+                </div>
+                <div class="cause-card">
+
+                    <h3>基础设施问题</h3>
+                    <p>加州在基础设施方面的投资不足，市政供水系统在设计的时候，没有考虑到大规模火灾的问题；在山火导致用水量激增后，消防部无法将水泵接入城市的管道网络。</p>
+                </div>
+                <div class="cause-card">
+
+                    <h3>资金问题</h3>
+                    <p>2020年洛杉矶政府对消防局进行预算削减，甚至取消了消防局内部的机械师等岗位，导致消防局难以维护其设备。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-area">
+        <div class="container">
+            <div class="section-header">
+                <h2>影响范围</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="impact-content">
+                <div class="map-container">
+                    <img src="屏幕截图 2025-04-21 134139.png"alt="加州山火影响区域地图">
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="color-box severe"></span>
+                            <span>严重受灾区</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-box moderate"></span>
+                            <span>中度受灾区</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-box light"></span>
+                            <span>轻度受灾区</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="color-box smoke"></span>
+                            <span>未受灾区</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="impact-stats">
+                    <div class="stat-item">
+                        <h3>420万+</h3>
+						<p style="font-size: 33px;">英亩土地被烧毁</p>
+                        
+                    </div>
+                    <div class="stat-item">
+                        <h3>13</h3>
+                        <p style="font-size: 33px;">人员死亡</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                       <p style="font-size: 33px;">建筑物损毁</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>$120亿+</h3>
+                        <p style="font-size: 33px;">经济损失</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fire-progression">
+        <div class="container">
+            <div class="section-header">
+                <h2>火势蔓延过程</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="chart-container">
+                <canvas id="fireProgressionChart"></canvas>
+            </div>
+			<br>
+			<section class="historical-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>山火发生时间线</h2>
+			<div class="timeline">
+                <div class="timeline-item">
+                    <div class="year">8月16日&nbsp;</div>
+                    <div class="event">
+                        <h3>干闪电风暴</h3>
+                        <p>罕见的闪电风暴引发数百起初始火点</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">8月18-20日</div>
+                    <div class="event">
+                        <h3>火势迅速蔓延</h3>
+                        <p>高温和强风导致火势在短时间内迅速扩大</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">9月5-15日</div>
+                    <div class="event">
+                        <h3>火势达到高峰</h3>
+                        <p>烧毁面积和烟雾影响达到最大范围</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="year">10月底</div>
+                    <div class="event">
+                        <h3>火势逐渐受控</h3>
+                        <p>天气转凉，消防力量增强，火势逐渐得到控制</p>
+                    </div>
+					
+				
+            </div>
+        </div>
+    </section>
+
+--> <div class="section-header">
+                <h2>山火造成的危害</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <img src="屏幕截图 2025-06-04 093954.png" alt="社区疏散">
+                    <h3>社区环境</h3>
+                    <p>超过200,000人在山火期间被迫疏散，许多人无法返回家园数周甚至数月。</p>
+                </div>
+                <div class="community-card">
+                    <img src="屏幕截图 2025-06-04 131740.png"alt="无家可归者">
+                    <h3>无家可归者</h3>
+                    <p>数千家庭失去住所，被迫寻求临时住所或与亲友同住。</p>
+                </div>
+                <div class="community-card">
+                    <img src="屏幕截图 2025-06-04 132120.png"alt="小型企业">
+                    <h3>小型企业</h3>
+                    <p>许多小型企业因山火直接损失或间接影响而倒闭，导致当地经济受损。</p>
+                </div>
+                <div class="community-card">
+                    <img src="屏幕截图 2025-06-04 132328.png"alt="弱势群体">
+                    <h3>弱势群体</h3>
+                    <p>老人、低收入家庭和有特殊需求的人群受到的影响尤为严重。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-fire"></i>
+                    <h2>山火科普</h2>
+                </div>
+            
+                <div class="footer-contact">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-envelope"></i> www.666.com</p>
+                    <p><i class="fas fa-phone"></i> 4008-123-123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 山火科普网站 | 所有信息仅供教育目的</p>
+                <div class="data-sources">
+                    <p>数据来源：加州林业与消防部门、美国国家海洋和大气管理局、加州应急管理局</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="file:///C|/Users/宋扬/Desktop/src/script.js"></script>
+    <script>
+        // 火势蔓延图表
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('fireProgressionChart').getContext('2d');
+            const fireProgressionChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['8/16', '8/18', '8/20', '8/22', '8/24', '8/26', '8/28', '8/30', '9/5', '9/10', '9/15', '9/20', '9/30', '10/15', '10/30'],
+                    datasets: [{
+                        label: '烧毁面积 (千英亩)',
+                        data: [50, 180, 380, 700, 1100, 1500, 1900, 2300, 3000, 3600, 4000, 4150, 4200, 4220, 4230],
+                        backgroundColor: 'rgba(255, 99, 71, 0.2)',
+                        borderColor: 'rgba(255, 99, 71, 1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '烧毁面积 (千英亩)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '日期 (2020年8-10月)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2020年加州山火蔓延趋势',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `烧毁面积: ${context.parsed.y.toLocaleString()} 千英亩`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
